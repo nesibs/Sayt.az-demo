@@ -1,0 +1,17 @@
+window.onload = function () {
+  var domain = window.location.hostname;
+  var tawkSrc = "";
+
+  if (domain === "sayt.az" || domain === "site.az" || domain.endsWith(".sayt.az") || domain.endsWith(".site.az")) {
+    tawkSrc = "https://embed.tawk.to/64d9d64994cf5d49dc6a3bd8/1h7peq3p4";
+  } else {
+    tawkSrc = "https://embed.tawk.to/667d8bfa9d7f358570d4061a/1i1d6lie6";
+  }
+
+  var s1 = document.createElement("script");
+  s1.async = true;
+  s1.src = tawkSrc;
+  s1.charSet = "UTF-8";
+  s1.setAttribute("crossorigin", "*");
+  document.body.appendChild(s1);
+};
