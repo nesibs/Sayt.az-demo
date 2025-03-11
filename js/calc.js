@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     features.forEach((feature, index) => {
         const toggle = document.createElement("label");
-        toggle.className = "flex justify-between items-center p-2 bg-gray-100 rounded-md my-1 w-[48%]";
+        toggle.className = "flex justify-between items-center p-2 bg-gray-100 rounded-md my-1 w-[90%] sm:w-[48%]";
         toggle.innerHTML = `
             <span>${feature.name}</span>
             <label class="relative inline-flex items-center cursor-pointer">
@@ -134,7 +134,7 @@ function renderOptions(options, containerId) {
     container.innerHTML = "";
     options.forEach((option, index) => {
         const toggle = document.createElement("label");
-        toggle.className = "flex justify-between items-center p-2 bg-gray-200 rounded-md w-[48%]";
+        toggle.className = "flex justify-between items-center p-2 bg-gray-200 rounded-md w-[90%] sm:w-[48%]";
         toggle.innerHTML = `
             <span>${option.name}</span>
             <label class="relative inline-flex items-center cursor-pointer">

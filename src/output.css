@@ -1159,6 +1159,12 @@
   .w-\[90\%\] {
     width: 90%;
   }
+  .w-\[90\] {
+    width: 90;
+  }
+  .w-\[100\%\] {
+    width: 100%;
+  }
   .w-\[200px\] {
     width: 200px;
   }
@@ -4147,6 +4153,11 @@
       display: block;
     }
   }
+  .sm\:w-\[48\%\] {
+    @media (width >= 40rem) {
+      width: 48%;
+    }
+  }
   .sm\:w-\[90\%\] {
     @media (width >= 40rem) {
       width: 90%;
@@ -4315,6 +4326,11 @@
   .md\:w-\[32\%\] {
     @media (width >= 48rem) {
       width: 32%;
+    }
+  }
+  .md\:w-\[70\%\] {
+    @media (width >= 48rem) {
+      width: 70%;
     }
   }
   .md\:max-w-\[380px\] {
