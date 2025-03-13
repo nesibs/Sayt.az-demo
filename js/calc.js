@@ -1,4 +1,43 @@
-document.getElementById('menu-btn').addEventListener('click', function() {
+
+//  ----------------  ISTIFADE OLUNAN ARRAYLAR ------------------
+
+const features = [
+    { name: "Bloq", price: 150, active: false },
+    { name: "Responsive", price: 200, active: false },
+    { name: "Mesajlaşma", price: 250, active: false },
+    { name: "Qalereya", price: 180, active: false },
+    { name: "Saytda Axtarış", price: 220, active: false },
+    { name: "Rezervasyon", price: 300, active: false },
+    { name: "Analitika / İzləmə", price: 280, active: false },
+    { name: "Üzv girişi / Profillər", price: 350, active: false },
+    { name: "Forum", price: 170, active: false },
+    { name: "Canlı Söhbət", price: 400, active: false },
+    { name: "Əlaqə Forması", price: 130, active: false },
+    { name: "Xəritə Məlumatı / Geolocation", price: 260, active: false },
+    { name: "Sosial Media İnteqrasiyası", price: 210, active: false },
+    { name: "Admin Panel", price: 500, active: false }
+];
+
+const seoOptions = [
+    { name: "Başlıqlar & Meta", price: 50, active: false },
+    { name: "Açar söz", price: 40, active: false },
+    { name: "+20 Qabaqcıl Texnika", price: 70, active: false },
+    { name: "Başlıq Teqləri", price: 30, active: false },
+    { name: "Sitemap", price: 20, active: false }
+];
+
+const ecommerceOptions = [
+    { name: "Ödəniş", price: 100, active: false },
+    { name: "Səbət", price: 80, active: false },
+    { name: "Məhsullar", price: 120, active: false },
+    { name: "Bəyəndiklərim", price: 90, active: false },
+    { name: "Filtr", price: 110, active: false }
+];
+
+
+// ------------- HEADER ACILIB BAGLANMASI --------------------
+
+document.getElementById('menu-btn').addEventListener('click', function () {
     document.getElementById('mobile-menu').classList.toggle('hidden');
 });
 
@@ -20,43 +59,14 @@ function toggleDropdown(id) {
     document.getElementById(id).classList.toggle('hidden');
 }
 
-const features = [
-    { name: "Bloq", price: 150, active: false },
-    { name: "Responsive", price: 200, active: false },
-    { name: "Mesajlaşma", price: 250, active: false },
-    { name: "Qalereya", price: 180, active: false },
-    { name: "Saytda Axtarış", price: 220, active: false },
-    { name: "Rezervasyon", price: 300, active: false },
-    { name: "Analitika / İzləmə", price: 280, active: false },
-    { name: "Üzv girişi / Profillər", price: 350, active: false },
-    { name: "Forum", price: 170, active: false },
-    { name: "Canlı Söhbət", price: 400, active: false },
-    { name: "Əlaqə Forması", price: 130, active: false },
-    { name: "Xəritə Məlumatı / Geolocation", price: 260, active: false },
-    { name: "Sosial Media İnteqrasiyası", price: 210, active: false },
-    { name: "Admin Panel", price: 500, active: false }
-];
+
+
+
+// --------------- BUTUN QIYMETLERIN HESABLANMASI ----------------------
 
 const staticPagePrice = 50;
 let staticPageCount = 1;
 let designComplexityMultiplier = 1;
-
-const seoOptions = [
-    { name: "Başlıqlar & Meta", price: 50, active: false },
-    { name: "Açar söz", price: 40, active: false },
-    { name: "+20 Qabaqcıl Texnika", price: 70, active: false },
-    { name: "Başlıq Teqləri", price: 30, active: false },
-    { name: "Sitemap", price: 20, active: false }
-];
-
-const ecommerceOptions = [
-    { name: "Ödəniş", price: 100, active: false },
-    { name: "Səbət", price: 80, active: false },
-    { name: "Məhsullar", price: 120, active: false },
-    { name: "Bəyəndiklərim", price: 90, active: false },
-    { name: "Filtr", price: 110, active: false }
-];
-
 const logoPrices = [0, 150, 300];
 let selectedLogoDesign = 0;
 
@@ -82,6 +92,10 @@ function calculateTotal() {
     document.getElementById("totalEcommerceCost").innerText = `$ ${ecommerceCost}`;
     document.getElementById("totalLogoCost").innerText = `$ ${logoCost}`;
 }
+
+
+// --------------- ELAVELERIN CAP OLUNMASI -----------------------
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const featuresContainer = document.getElementById("featuresList");

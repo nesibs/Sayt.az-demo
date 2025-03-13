@@ -3,180 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/input.css" />
     <link rel="stylesheet" href="src/output.css" />
     <title>Document</title>
 </head>
 <body>
-    <header class="bg-white shadow-md p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="./index.htm" class="text-2xl font-bold text-gray-800"> <img src="./image/saytaz.svg" alt=""></a>
-            
-            <!-- Mobil Menyu Butonu -->
-            <button id="menu-btn" class="lg:hidden text-gray-600 focus:outline-none">
-                ☰
-            </button>
-            
-            <!-- Menyu -->
-            <nav class="hidden lg:flex space-x-6">
-                <div class="relative">
-                    <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-websayt')">Web sayt</button>
-                    <div id="desktop-websayt" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
-                        <a
-                        href="#"
-                        class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                      >
-                        <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                          <img
-                            src="./image/website-program.svg"
-                            class="w-8 h-8"
-                            alt="Icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="text-[16px]">Saytların hazırlanması</p>
-                          <p class="text-[#64748b] text-[14px]">
-                            Veb saytlarin hazirlanmasi
-                          </p>
-                        </div>
-                      </a>
-                      <a
-                      href="#"
-                      class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                    >
-                      <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                        <img
-                          src="./image/canta.svg"
-                          class="w-8 h-8"
-                          alt="Icon"
-                        />
-                      </div>
-                      <div>
-                        <p class="text-[16px]">Saytların hazırlanması</p>
-                        <p class="text-[#64748b] text-[14px]">
-                          Veb saytlarin hazirlanmasi
-                        </p>
-                      </div>
-                    </a>
-                    <a
-                    href="#"
-                    class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                  >
-                    <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                      <img
-                        src="./image/ev.svg"
-                        class="w-8 h-8"
-                        alt="Icon"
-                      />
-                    </div>
-                    <div>
-                      <p class="text-[16px]">Saytların hazırlanması</p>
-                      <p class="text-[#64748b] text-[14px]">
-                        Veb saytlarin hazirlanmasi
-                      </p>
-                    </div>
-                  </a>
-                      <a
-                      href="#"
-                      class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                    >
-                      <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                        <img
-                          src="./image/website-program.svg"
-                          class="w-8 h-8"
-                          alt="Icon"
-                        />
-                      </div>
-                      <div>
-                        <p class="text-[16px]">Saytların hazırlanması</p>
-                        <p class="text-[#64748b] text-[14px]">
-                          Veb saytlarin hazirlanmasi
-                        </p>
-                      </div>
-                    </a>
-                    </div>
-                </div>
-                <div class="relative">
-                    <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-domen')">Domen</button>
-                    <div id="desktop-domen" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
-                        <a
-                        href="#"
-                        class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                      >
-                        <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                          <img
-                            src="./image/website-program.svg"
-                            class="w-8 h-8"
-                            alt="Icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="text-[16px]">Saytların hazırlanması</p>
-                          <p class="text-[#64748b] text-[14px]">
-                            Veb saytlarin hazirlanmasi
-                          </p>
-                        </div>
-                      </a>
-                      <a
-                      href="#"
-                      class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                    >
-                      <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                        <img
-                          src="./image/website-program.svg"
-                          class="w-8 h-8"
-                          alt="Icon"
-                        />
-                      </div>
-                      <div>
-                        <p class="text-[16px]">Saytların hazırlanması</p>
-                        <p class="text-[#64748b] text-[14px]">
-                          Veb saytlarin hazirlanmasi
-                        </p>
-                      </div>
-                    </a>
-                    </div>
-                </div>
-                <div class="relative">
-                    <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-hosting')">Hostinq</button>
-                    <div id="desktop-hosting" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
-                        <a
-                        href="#"
-                        class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                      >
-                        <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                          <img
-                            src="./image/website-program.svg"
-                            class="w-8 h-8"
-                            alt="Icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="text-[16px]">Saytların hazırlanması</p>
-                          <p class="text-[#64748b] text-[14px]">
-                            Veb saytlarin hazirlanmasi
-                          </p>
-                        </div>
-                      </a>
-                      <a
-                      href="#"
-                      class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                    >
-                      <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                        <img
-                          src="./image/website-program.svg"
-                          class="w-8 h-8"
-                          alt="Icon"
-                        />
-                      </div>
-                      <div>
-                        <p class="text-[16px]">Saytların hazırlanması</p>
-                        <p class="text-[#64748b] text-[14px]">
-                          Veb saytlarin hazirlanmasi
-                        </p>
-                      </div>
-                    </a>
+  <header class="bg-white shadow-md p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="./index.htm" class="text-2xl font-bold text-gray-800"> <img src="./image/saytaz.svg" alt=""></a>
+        
+        <!-- Mobil Menyu Butonu -->
+        <button id="menu-btn" class="lg:hidden text-gray-600 focus:outline-none">
+            ☰
+        </button>
+        
+        <!-- Menyu -->
+        <nav class="hidden lg:flex space-x-6">
+            <div class="relative">
+                <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-websayt')">Web sayt <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="desktop-websayt" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
                     <a
                     href="#"
                     class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
@@ -195,54 +41,72 @@
                       </p>
                     </div>
                   </a>
-                    </div>
+                  <a
+                  href="#"
+                  class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+                >
+                  <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                    <img
+                      src="./image/canta.svg"
+                      class="w-8 h-8"
+                      alt="Icon"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-[16px]">Saytların hazırlanması</p>
+                    <p class="text-[#64748b] text-[14px]">
+                      Veb saytlarin hazirlanmasi
+                    </p>
+                  </div>
+                </a>
+                <a
+                href="#"
+                class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+              >
+                <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                  <img
+                    src="./image/ev.svg"
+                    class="w-8 h-8"
+                    alt="Icon"
+                  />
                 </div>
-                <div class="relative">
-                    <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-xidmetler')">Xidmətlər</button>
-                    <div id="desktop-xidmetler" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
-                        <a
-                        href="./calculator.htm"
-                        class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                      >
-                        <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                          <img
-                            src="./image/calculator.svg"
-                            class="w-8 h-8"
-                            alt="Icon"
-                          />
-                        </div>
-                        <div>
-                          <p class="text-[16px]">Sayt Kalkulyatoru</p>
-                          <p class="text-[#64748b] text-[14px]">
-                             Saytin qiymetini hesabla
-                          </p>
-                        </div>
-                      </a>
-                      <a
-                      href="#"
-                      class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
-                    >
-                      <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                        <img
-                          src="./image/website-program.svg"
-                          class="w-8 h-8"
-                          alt="Icon"
-                        />
-                      </div>
-                      <div>
-                        <p class="text-[16px]">Saytların hazırlanması</p>
-                        <p class="text-[#64748b] text-[14px]">
-                          Veb saytlarin hazirlanmasi
-                        </p>
-                      </div>
-                    </a>
+                <div>
+                  <p class="text-[16px]">Saytların hazırlanması</p>
+                  <p class="text-[#64748b] text-[14px]">
+                    Veb saytlarin hazirlanmasi
+                  </p>
+                </div>
+              </a>
+                  <a
+                  href="#"
+                  class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+                >
+                  <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                    <img
+                      src="./image/website-program.svg"
+                      class="w-8 h-8"
+                      alt="Icon"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-[16px]">Saytların hazırlanması</p>
+                    <p class="text-[#64748b] text-[14px]">
+                      Veb saytlarin hazirlanmasi
+                    </p>
+                  </div>
+                </a>
+                </div>
+            </div>
+            <div class="relative">
+                <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-domen')">Domen <i class="fa-solid fa-chevron-down"></i></button>
+                <div id="desktop-domen" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
                     <a
                     href="#"
                     class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
                   >
                     <div class="bg-[#dbeafe] p-2 rounded-[5px]">
                       <img
-                        src="./image/ev.svg"
+                        src="./image/website-program.svg"
                         class="w-8 h-8"
                         alt="Icon"
                       />
@@ -272,116 +136,175 @@
                     </p>
                   </div>
                 </a>
-                    </div>
                 </div>
-            </nav>
-             
-             
-                <div class="flex items-center space-x-4">
-                    <select name="val" id="val" class="text-[20px] outline-none">
-                      <option class="text-[20px] outline-none">₼</option>
-                      <option class="text-[20px] outline-none">$</option>
-                    </select>
-                    <select name="lang" id="lang" class="text-[20px] outline-none">
-                      <option class="text-[20px] outline-none">🇦🇿</option>
-                      <option class="text-[20px] outline-none">🇺🇸</option>
-                    </select>
-                    <button
-                      class="bg-gradient-to-r from-purple-500 to-purple-400 text-white px-4 py-2 rounded-lg shadow-md hidden md:block"
-                    >
-                      Qiymət Təklifi Al
-                    </button>
-                    <button
-                      class="border border-purple-500 text-purple-500 px-4 py-2 rounded-lg hidden md:block"
-                    >
-                      Daxil Olun
-                    </button>
             </div>
-            
+            <div class="relative">
+                <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-hosting')">Hostinq<i class="fa-solid fa-chevron-down"></i></button>
+                <div id="desktop-hosting" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
+                    <a
+                    href="#"
+                    class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+                  >
+                    <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                      <img
+                        src="./image/website-program.svg"
+                        class="w-8 h-8"
+                        alt="Icon"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-[16px]">Saytların hazırlanması</p>
+                      <p class="text-[#64748b] text-[14px]">
+                        Veb saytlarin hazirlanmasi
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                  href="#"
+                  class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+                >
+                  <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                    <img
+                      src="./image/website-program.svg"
+                      class="w-8 h-8"
+                      alt="Icon"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-[16px]">Saytların hazırlanması</p>
+                    <p class="text-[#64748b] text-[14px]">
+                      Veb saytlarin hazirlanmasi
+                    </p>
+                  </div>
+                </a>
+                <a
+                href="#"
+                class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+              >
+                <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                  <img
+                    src="./image/website-program.svg"
+                    class="w-8 h-8"
+                    alt="Icon"
+                  />
+                </div>
+                <div>
+                  <p class="text-[16px]">Saytların hazırlanması</p>
+                  <p class="text-[#64748b] text-[14px]">
+                    Veb saytlarin hazirlanmasi
+                  </p>
+                </div>
+              </a>
+                </div>
+            </div>
+            <div class="relative">
+                <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-xidmetler')">Xidmətlər<i class="fa-solid fa-chevron-down"></i></button>
+                <div id="desktop-xidmetler" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
+                    <a
+                    href="./calculator.htm"
+                    class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+                  >
+                    <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                      <img
+                        src="./image/calculator.svg"
+                        class="w-8 h-8"
+                        alt="Icon"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-[16px]">Sayt Kalkulyatoru</p>
+                      <p class="text-[#64748b] text-[14px]">
+                         Saytin qiymetini hesabla
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                  href="#"
+                  class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+                >
+                  <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                    <img
+                      src="./image/website-program.svg"
+                      class="w-8 h-8"
+                      alt="Icon"
+                    />
+                  </div>
+                  <div>
+                    <p class="text-[16px]">Saytların hazırlanması</p>
+                    <p class="text-[#64748b] text-[14px]">
+                      Veb saytlarin hazirlanmasi
+                    </p>
+                  </div>
+                </a>
+                <a
+                href="#"
+                class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+              >
+                <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                  <img
+                    src="./image/ev.svg"
+                    class="w-8 h-8"
+                    alt="Icon"
+                  />
+                </div>
+                <div>
+                  <p class="text-[16px]">Saytların hazırlanması</p>
+                  <p class="text-[#64748b] text-[14px]">
+                    Veb saytlarin hazirlanmasi
+                  </p>
+                </div>
+              </a>
+              <a
+              href="#"
+              class="flex items-center gap-3 py-4 px-6 hover:bg-gray-100"
+            >
+              <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                <img
+                  src="./image/website-program.svg"
+                  class="w-8 h-8"
+                  alt="Icon"
+                />
+              </div>
+              <div>
+                <p class="text-[16px]">Saytların hazırlanması</p>
+                <p class="text-[#64748b] text-[14px]">
+                  Veb saytlarin hazirlanmasi
+                </p>
+              </div>
+            </a>
+                </div>
+            </div>
+        </nav>
+         
+         
+            <div class="flex items-center space-x-4">
+                <select name="val" id="val" class="text-[20px] outline-none">
+                  <option class="text-[20px] outline-none">₼</option>
+                  <option class="text-[20px] outline-none">$</option>
+                </select>
+                <select name="lang" id="lang" class="text-[20px] outline-none">
+                  <option class="text-[20px] outline-none">🇦🇿</option>
+                  <option class="text-[20px] outline-none">🇺🇸</option>
+                </select>
+                <button
+                  class="bg-gradient-to-r from-purple-500 to-purple-400 text-white px-4 py-2 rounded-lg shadow-md hidden md:block"
+                >
+                  Qiymət Təklifi Al
+                </button>
+                <button
+                  class="border border-purple-500 text-purple-500 px-4 py-2 rounded-lg hidden md:block"
+                >
+                  Daxil Olun
+                </button>
         </div>
         
-        <!-- Mobil Menyu -->
-        <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md p-4">
-            <div class="border-b">
-                <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-websayt')">Web sayt</button>
-                <div id="mobile-websayt" class="hidden pl-4 accordion">
-                    <a
-                    href="#"
-                    class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
-                  >
-                    <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                      <img
-                        src="./image/website-program.svg"
-                        class="w-6 h-6"
-                        alt="Icon"
-                      />
-                    </div>
-                    <div>
-                      <p class="text-[14px]">Saytların hazırlanması</p>
-                      <p class="text-[#64748b] text-[13px]">
-                        Veb saytlarin hazirlanmasi
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                  href="#"
-                  class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
-                >
-                  <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                    <img
-                      src="./image/website-program.svg"
-                      class="w-6 h-6"
-                      alt="Icon"
-                    />
-                  </div>
-                  <div>
-                    <p class="text-[14px]">Saytların hazırlanması</p>
-                    <p class="text-[#64748b] text-[13px]">
-                      Veb saytlarin hazirlanmasi
-                    </p>
-                  </div>
-                </a>
-                </div>
-            </div>
-            <div class="border-b">
-                <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-domen')">Domen</button>
-                <div id="mobile-domen" class="hidden pl-4 accordion">
-                    <a
-                    href="#"
-                    class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
-                  >
-                    <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                      <img
-                        src="./image/website-program.svg"
-                        class="w-6 h-6"
-                        alt="Icon"
-                      />
-                    </div>
-                    <div>
-                      <p class="text-[14px]">Saytların hazırlanması</p>
-                      <p class="text-[#64748b] text-[13px]">
-                        Veb saytlarin hazirlanmasi
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                  href="#"
-                  class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
-                >
-                  <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                    <img
-                      src="./image/website-program.svg"
-                      class="w-6 h-6"
-                      alt="Icon"
-                    />
-                  </div>
-                  <div>
-                    <p class="text-[14px]">Saytların hazırlanması</p>
-                    <p class="text-[#64748b] text-[13px]">
-                      Veb saytlarin hazirlanmasi
-                    </p>
-                  </div>
-                </a>
+    </div>
+    
+    <!-- Mobil Menyu -->
+    <div id="mobile-menu" class="lg:hidden hidden   p-4">
+        <div class=" ">
+            <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-websayt')">Web sayt<i class="fa-solid fa-chevron-down"></i></button>
+            <div id="mobile-websayt" class="hidden pl-4 accordion">
                 <a
                 href="#"
                 class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
@@ -400,143 +323,235 @@
                   </p>
                 </div>
               </a>
-                </div>
+              <a
+              href="#"
+              class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
+            >
+              <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                <img
+                  src="./image/website-program.svg"
+                  class="w-6 h-6"
+                  alt="Icon"
+                />
+              </div>
+              <div>
+                <p class="text-[14px]">Saytların hazırlanması</p>
+                <p class="text-[#64748b] text-[13px]">
+                  Veb saytlarin hazirlanmasi
+                </p>
+              </div>
+            </a>
             </div>
-            <div class="border-b">
-                <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-hosting')">Hostinq</button>
-                <div id="mobile-hosting" class="hidden pl-4 accordion">
-                    <a
-                    href="#"
-                    class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
-                  >
-                    <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                      <img
-                        src="./image/website-program.svg"
-                        class="w-6 h-6"
-                        alt="Icon"
-                      />
-                    </div>
-                    <div>
-                      <p class="text-[14px]">Saytların hazırlanması</p>
-                      <p class="text-[#64748b] text-[13px]">
-                        Veb saytlarin hazirlanmasi
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                  href="#"
-                  class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
-                >
-                  <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                    <img
-                      src="./image/website-program.svg"
-                      class="w-6 h-6"
-                      alt="Icon"
-                    />
-                  </div>
-                  <div>
-                    <p class="text-[14px]">Saytların hazırlanması</p>
-                    <p class="text-[#64748b] text-[13px]">
-                      Veb saytlarin hazirlanmasi
-                    </p>
-                  </div>
-                </a>
-                </div>
-            </div>
-            <div class="border-b">
-                <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-xidmetler')">Xidmətlər</button>
-                <div id="mobile-xidmetler" class="hidden pl-4 accordion">
-                    <a
-                    href="#"
-                    class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
-                  >
-                    <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                      <img
-                        src="./image/calculator.svg"
-                        class="w-6 h-6"
-                        alt="Icon"
-                      />
-                    </div>
-                    <div>
-                      <p class="text-[14px]"> Sayt Kalkulyatoru</p>
-                      <p class="text-[#64748b] text-[13px]">
-                        Saytin qiymetini oyren
-                      </p>
-                    </div>
-                  </a>
-                  <a
-                  href="#"
-                  class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
-                >
-                  <div class="bg-[#dbeafe] p-2 rounded-[5px]">
-                    <img
-                      src="./image/website-program.svg"
-                      class="w-6 h-6"
-                      alt="Icon"
-                    />
-                  </div>
-                  <div>
-                    <p class="text-[14px]">Saytların hazırlanması</p>
-                    <p class="text-[#64748b] text-[13px]">
-                      Veb saytlarin hazirlanmasi
-                    </p>
-                  </div>
-                </a>
+        </div>
+        <div class=" ">
+            <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-domen')">Domen<i class="fa-solid fa-chevron-down"></i></button>
+            <div id="mobile-domen" class="hidden pl-4 accordion">
                 <a
                 href="#"
                 class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
               >
                 <div class="bg-[#dbeafe] p-2 rounded-[5px]">
                   <img
-                    src="./image/canta.svg"
+                    src="./image/website-program.svg"
                     class="w-6 h-6"
                     alt="Icon"
                   />
                 </div>
                 <div>
-                  <p class="text-[14px]">Gerek gedib soz kopyalasaydim</p>
+                  <p class="text-[14px]">Saytların hazırlanması</p>
                   <p class="text-[#64748b] text-[13px]">
                     Veb saytlarin hazirlanmasi
                   </p>
                 </div>
               </a>
-                </div>
+              <a
+              href="#"
+              class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
+            >
+              <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                <img
+                  src="./image/website-program.svg"
+                  class="w-6 h-6"
+                  alt="Icon"
+                />
+              </div>
+              <div>
+                <p class="text-[14px]">Saytların hazırlanması</p>
+                <p class="text-[#64748b] text-[13px]">
+                  Veb saytlarin hazirlanmasi
+                </p>
+              </div>
+            </a>
+            <a
+            href="#"
+            class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
+          >
+            <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+              <img
+                src="./image/website-program.svg"
+                class="w-6 h-6"
+                alt="Icon"
+              />
+            </div>
+            <div>
+              <p class="text-[14px]">Saytların hazırlanması</p>
+              <p class="text-[#64748b] text-[13px]">
+                Veb saytlarin hazirlanmasi
+              </p>
+            </div>
+          </a>
             </div>
         </div>
-    </header>
+        <div class=" ">
+            <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-hosting')">Hostinq<i class="fa-solid fa-chevron-down"></i></button>
+            <div id="mobile-hosting" class="hidden pl-4 accordion">
+                <a
+                href="#"
+                class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
+              >
+                <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                  <img
+                    src="./image/website-program.svg"
+                    class="w-6 h-6"
+                    alt="Icon"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]">Saytların hazırlanması</p>
+                  <p class="text-[#64748b] text-[13px]">
+                    Veb saytlarin hazirlanmasi
+                  </p>
+                </div>
+              </a>
+              <a
+              href="#"
+              class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
+            >
+              <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                <img
+                  src="./image/website-program.svg"
+                  class="w-6 h-6"
+                  alt="Icon"
+                />
+              </div>
+              <div>
+                <p class="text-[14px]">Saytların hazırlanması</p>
+                <p class="text-[#64748b] text-[13px]">
+                  Veb saytlarin hazirlanmasi
+                </p>
+              </div>
+            </a>
+            </div>
+        </div>
+        <div class=" ">
+            <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-xidmetler')">Xidmətlər<i class="fa-solid fa-chevron-down"></i></button>
+            <div id="mobile-xidmetler" class="hidden pl-4 accordion">
+                <a
+                href="./calculator.htm"
+                class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
+              >
+                <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                  <img
+                    src="./image/calculator.svg"
+                    class="w-6 h-6"
+                    alt="Icon"
+                  />
+                </div>
+                <div>
+                  <p class="text-[14px]"> Sayt Kalkulyatoru</p>
+                  <p class="text-[#64748b] text-[13px]">
+                    Saytin qiymetini oyren
+                  </p>
+                </div>
+              </a>
+              <a
+              href="#"
+              class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
+            >
+              <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+                <img
+                  src="./image/website-program.svg"
+                  class="w-6 h-6"
+                  alt="Icon"
+                />
+              </div>
+              <div>
+                <p class="text-[14px]">Saytların hazırlanması</p>
+                <p class="text-[#64748b] text-[13px]">
+                  Veb saytlarin hazirlanmasi
+                </p>
+              </div>
+            </a>
+            <a
+            href="#"
+            class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
+          >
+            <div class="bg-[#dbeafe] p-2 rounded-[5px]">
+              <img
+                src="./image/canta.svg"
+                class="w-6 h-6"
+                alt="Icon"
+              />
+            </div>
+            <div>
+              <p class="text-[14px]">Gerek gedib soz kopyalasaydim</p>
+              <p class="text-[#64748b] text-[13px]">
+                Veb saytlarin hazirlanmasi
+              </p>
+            </div>
+          </a>
+            </div>
+        </div>
+        <div class="flex flex-wrap items-center mt-3  gap-3 md:hidden">
+          <button
+          class="bg-gradient-to-r from-purple-500 to-purple-400 text-white px-4 py-2 rounded-lg shadow-md  "
+        >
+          Qiymət Təklifi Al
+        </button>
+        <button
+          class="border border-purple-500 text-purple-500 px-4 py-2 rounded-lg  "
+        >
+          Daxil Olun
+        </button>
+        </div>
+    </div>
+</header>
     
   
     <div class="max-w-6xl mx-auto bg-gray-100 p-6 rounded-lg shadow-lg flex justify-center flex-col md:flex-row gap-5">
 
         <div class=" w-[100%] md:w-[70%] bg-white p-3">
-           <h2 class="text-2xl font-bold mb-4">Qiymət Təklifi Al</h2>
+           <h2 class="text-[30px] lg:text-[40px] font-bold mb-4">Qiymət Təklifi Al</h2>
            
             <h3 class="text-lg font-semibold">Statik səhifələr</h3>
         <div class="bg-gray-100 p-3">    
            <div>
                <label for="staticPageSlider" class="block mt-2">Neçə statik səhifə olacaq?</label>
                <div class="flex items-center justify-between gap-3">
-                   <span class="bg-violet-600 text-white p-2 rounded-[10px]">1</span> 
-                   <input id="staticPageSlider" type="range" min="1" max="20" value="1" class="w-full mt-1 text-violet-600 bg-violet-600">
+                   <span class="bg-violet-600 w-8 text-white p-2 rounded-[10px]">1</span>  
+                   <input id="staticPageSlider" type="range" class="w-full dark:accent-violet-600" value="5" min="1" max="20">
                    <span class="bg-violet-600 text-white p-2 rounded-[10px]">20</span> 
                </div>
                <p class="mt-1">Seçdiyiniz səhifə sayı: <span id="staticPageCount">1</span></p>
            </div>
            
-           <div class="mt-4">
-               <h3 class="text-lg font-semibold">Dizayn mürəkkəblik</h3>
-               <div class="flex justify-between items-center">
-                   <p class="mt-1">Sade </p>
-                   <p class="mt-1"> Orta </p>
-                   <p class="mt-1"> Xüsusi</p>
-               </div>
-               <input id="designComplexitySlider" type="range" min="0" max="2" step="1" value="0" class="w-full">
+           <div class="mt-4 flex flex-col md:flex-row">
+               <h3 class=" w-[30%] text-left  ">Dizayn mürəkkəblik</h3>
+            <div class="w-[70%]">
+              <div class="flex justify-between items-center">
+                <p class="mt-1">Sade </p>
+                <p class="mt-1"> Orta </p>
+                <p class="mt-1"> Xüsusi</p>
+            </div>
+            <input id="designComplexitySlider" type="range" min="0" max="2" step="1" value="0" class="w-full">
+            </div>
            </div>
-           <div class="px-2 py-3 bg-[#4a84bf26] flex justify-between items-center">
-               <span>Xerc:</span>
-               <span class="text-violet-600 font-semibold text-[18px]" id="xerc1">$ 50</span>
-           </div>
+          
         </div>
+        <div class="px-2 py-3 bg-[#4a84bf26] flex justify-between items-center">
+          <span>Xerc:</span>
+          <span class="text-violet-600 font-semibold text-[18px]" id="xerc1">$ 50</span>
+      </div>
            
            <div class="mt-6">
                <h3 class="text-lg font-semibold">Veb sayt əlavələri</h3>
@@ -548,54 +563,61 @@
            </div>
    
            <h3 class="text-lg font-semibold mt-6">Axtarış Motorunun Optimallaşdırılması</h3>
-           <div class="bg-gray-100 p-3 rounded-lg">
-               <div id="seoOptions" class="flex flex-wrap gap-3"></div>
-               <div class="px-2 py-3 bg-[#4a84bf26] flex justify-between items-center mt-3">
-                   <span>Xərclər:</span>
-                   <span class="text-violet-600 font-semibold text-[18px]" id="seoCost">$ 0</span>
-               </div>
+           <div class="  ">
+               <div id="seoOptions" class="flex flex-wrap gap-3 bg-gray-100 p-3 "></div>
+              
            </div>
+           <div class="px-2 py-3 bg-[#4a84bf26] flex justify-between items-center ">
+            <span>Xərclər:</span>
+            <span class="text-violet-600 font-semibold text-[18px]" id="seoCost">$ 0</span>
+        </div>
    
            <h3 class="text-lg font-semibold mt-6">Elektron Ticarət Əlavələri</h3>
-           <div class="bg-gray-100 p-3 rounded-lg">
-               <div id="ecommerceOptions" class="flex flex-wrap gap-3"></div>
-               <div class="px-2 py-3 bg-[#4a84bf26] flex justify-between items-center mt-3">
+           <div >
+               <div id="ecommerceOptions" class="flex flex-wrap gap-3 bg-gray-100 p-3"></div>
+               <div class="px-2 py-3 bg-[#4a84bf26] flex justify-between items-center  ">
                    <span>Xərclər:</span>
                    <span class="text-violet-600 font-semibold text-[18px]" id="ecommerceCost">$ 0</span>
                </div>
            </div>
    
            <h3 class="text-lg font-semibold mt-6">Logo Dizaynı</h3>
-           <div class="bg-gray-100 p-3 rounded-lg">
+           <div class="bg-gray-100 p-3 ">
                <input id="logoDesignSlider" type="range" min="0" max="2" step="1" value="0" class="w-full">
                <div class="flex justify-between text-sm mt-2">
                    <span>Ehityac yoxdur</span>
                    <span>Sadə</span>
                    <span>Xüsusi</span>
                </div>
-               <div class="px-2 py-3 bg-[#4a84bf26] flex justify-between items-center mt-3">
-                   <span>Xərclər:</span>
-                   <span class="text-violet-600 font-semibold text-[18px]" id="logoCost">$ 0</span>
-               </div>
+               
            </div>
+           <div class="px-2 py-3 bg-[#4a84bf26] flex justify-between items-center">
+            <span>Xərclər:</span>
+            <span class="text-violet-600 font-semibold text-[18px]" id="logoCost">$ 0</span>
+        </div>
 
         </div>
    
-           <div class=" w-[100%] md:w-[30%] bg-white p-3">
-               <div class="mt-6 p-4 bg-gray-200 rounded-lg">
-                   <h3 class="text-lg font-bold">Ümumi qiymət:</h3>
-                   <p>Statik səhifələr: <span id="staticPageCost">$ 50</span></p>
-                   <p>Əlavələr: <span id="additionalCost">$ 0</span></p>
-                   <p>SEO: <span id="totalSeoCost">$ 0</span></p>
-                   <p>E-ticarət: <span id="totalEcommerceCost">$ 0</span></p>
-                   <p>Logo Dizaynı: <span id="totalLogoCost">$ 0</span></p>
-                   <h2 class="text-xl font-bold text-purple-600 mt-2">Ümumi: <span id="totalPrice">$ 50</span></h2>
+           <div class=" w-[100%] md:w-[30%] bg-white">
+            <h3 class="text-lg font-semibold pt-6 px-3"> Teklifiniz</h3>
+              <div class="mt-6 p-4   rounded-lg">
+                  
+                   <p class="text-gray-500 text-[15px]  ">Statik səhifələr: <span class="float-right text-purple-600 font-semibold" id="staticPageCost">$ 50</span></p>
+                   <p class="text-gray-500 text-[15px] mt-3">Əlavələr: <span class="float-right text-purple-600 font-semibold"  id="additionalCost">$ 0</span></p>
+                   <p class="text-gray-500 text-[15px] mt-3">SEO: <span class="float-right text-purple-600 font-semibold"  id="totalSeoCost">$ 0</span></p>
+                   <p class="text-gray-500 text-[15px] mt-3">E-ticarət: <span class="float-right text-purple-600 font-semibold"  id="totalEcommerceCost">$ 0</span></p>
+                   <p class="text-gray-500 text-[15px] mt-3 pb-7 border-b border-b-neutral-400">Logo Dizaynı: <span class="float-right text-purple-600 font-semibold"  id="totalLogoCost">$ 0</span></p>
+                   <p class="text-gray-500 font-bold text-[15px] mt-5"> Qeyd <span class="float-right "  id="totalLogoCost">Minimum sayt qiymeti: <span class="text-violet-500">$265</span></span></p>
+                   
                </div>
                
+               <div class="bg-violet-500 px-2">
+                <h2 class="text-xl text-white font-semibold py-5  mt-2">Ümumi texmini deyer: <span id="totalPrice" class="float-right">$ 50</span></h2>
+               </div>
                <button class="mt-4 w-full bg-green-500 text-white py-2 rounded-lg">Saytınızı İndi Sifariş Edin</button>
            </div>
+        
        </div>
-
        <footer class="bg-[#faf4ff] mt-20">
         <div class="flex justify-center items-center  gap-8 text-[#300b60] p-10 flex-col md:flex-row ">
           <div class=" w-80% md:w-[30%]">
@@ -632,7 +654,7 @@
         </div>
         <div class="text-[#300b60] p-10">
           <hr class="text-gray-200">
-          <div class="flex justify-center items-center flex-col gap-30 md:flex-row pt-10">
+          <div class="flex justify-center items-center flex-col gap-5 lg:gap-30 md:flex-row pt-3 md:pt-10">
             <div>© Copyright 2004-2025 © Sayt.az .  Bütün Hüquqlar Qorunur.</div>
             <div><i class="fa-solid fa-phone"></i> 
               +(99470) 330-00-04

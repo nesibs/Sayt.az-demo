@@ -62,7 +62,7 @@
           <!-- Menyu -->
           <nav class="hidden lg:flex space-x-6">
               <div class="relative">
-                  <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-websayt')">Web sayt</button>
+                  <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-websayt')">Web sayt <i class="fa-solid fa-chevron-down"></i></button>
                   <div id="desktop-websayt" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
                       <a
                       href="#"
@@ -139,7 +139,7 @@
                   </div>
               </div>
               <div class="relative">
-                  <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-domen')">Domen</button>
+                  <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-domen')">Domen <i class="fa-solid fa-chevron-down"></i></button>
                   <div id="desktop-domen" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
                       <a
                       href="#"
@@ -180,7 +180,7 @@
                   </div>
               </div>
               <div class="relative">
-                  <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-hosting')">Hostinq</button>
+                  <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-hosting')">Hostinq<i class="fa-solid fa-chevron-down"></i></button>
                   <div id="desktop-hosting" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
                       <a
                       href="#"
@@ -239,7 +239,7 @@
                   </div>
               </div>
               <div class="relative">
-                  <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-xidmetler')">Xidmətlər</button>
+                  <button class="text-gray-700 hover:text-purple-600" onclick="toggleDropdown('desktop-xidmetler')">Xidmətlər<i class="fa-solid fa-chevron-down"></i></button>
                   <div id="desktop-xidmetler" class="absolute left-0 mt-2 w-80 bg-white shadow-md hidden dropdown">
                       <a
                       href="./calculator.htm"
@@ -342,9 +342,9 @@
       </div>
       
       <!-- Mobil Menyu -->
-      <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md p-4">
-          <div class="border-b">
-              <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-websayt')">Web sayt</button>
+      <div id="mobile-menu" class="lg:hidden hidden   p-4">
+          <div class=" ">
+              <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-websayt')">Web sayt<i class="fa-solid fa-chevron-down"></i></button>
               <div id="mobile-websayt" class="hidden pl-4 accordion">
                   <a
                   href="#"
@@ -384,8 +384,8 @@
               </a>
               </div>
           </div>
-          <div class="border-b">
-              <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-domen')">Domen</button>
+          <div class=" ">
+              <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-domen')">Domen<i class="fa-solid fa-chevron-down"></i></button>
               <div id="mobile-domen" class="hidden pl-4 accordion">
                   <a
                   href="#"
@@ -443,8 +443,8 @@
             </a>
               </div>
           </div>
-          <div class="border-b">
-              <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-hosting')">Hostinq</button>
+          <div class=" ">
+              <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-hosting')">Hostinq<i class="fa-solid fa-chevron-down"></i></button>
               <div id="mobile-hosting" class="hidden pl-4 accordion">
                   <a
                   href="#"
@@ -484,11 +484,11 @@
               </a>
               </div>
           </div>
-          <div class="border-b">
-              <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-xidmetler')">Xidmətlər</button>
+          <div class=" ">
+              <button class="w-full text-left px-4 py-2 text-gray-700" onclick="toggleAccordion('mobile-xidmetler')">Xidmətlər<i class="fa-solid fa-chevron-down"></i></button>
               <div id="mobile-xidmetler" class="hidden pl-4 accordion">
                   <a
-                  href="#"
+                  href="./calculator.htm"
                   class="flex items-center gap-3 py-2 px-4 hover:bg-gray-100 border-b"
                 >
                   <div class="bg-[#dbeafe] p-2 rounded-[5px]">
@@ -543,28 +543,39 @@
             </a>
               </div>
           </div>
+          <div class="flex flex-wrap items-center  gap-3 md:hidden">
+            <button
+            class="bg-gradient-to-r from-purple-500 to-purple-400 text-white px-4 py-2 rounded-lg shadow-md  "
+          >
+            Qiymət Təklifi Al
+          </button>
+          <button
+            class="border border-purple-500 text-purple-500 px-4 py-2 rounded-lg  "
+          >
+            Daxil Olun
+          </button>
+          </div>
       </div>
   </header>
   
     <main>
       <div class="flex justify-center items-center mt-20">
         <div class="w-[40%] text-center">
-          <h1 class=" text-[30px] lg:text-[45px] font-semibold mt-10">
+          <h1 class=" text-[25px] md:text-[30px] lg:text-[45px] font-semibold mt-10">
             Biznesinizi bizimlə rəqəmsal dünyada
             <span>
               <img
-                class=" w-40 h-20 lg:w-70 lg:h-30 top[-20px] inline cursor-pointer"
-                src="./image/dahaasan.png"
-                alt=""
+                class=" w-24 h-12 md:w-40 md:h-20 lg:w-70 lg:h-30 top[-20px] inline cursor-pointer"
+                src="./image/dahaasan.png" 
             /></span>
             yoldan irəliyə apar!
           </h1>
-          <p class=" text-[15px] lg:text-[22px] text-[#64748b] mt-10">
+          <p class="text-[13px] md:text-[15px] lg:text-[22px] text-[#64748b] mt-3 md:mt-10">
             Mütəxəssislərdən ibarət komandamız sizə müştəri dəstəyi və texniki
             yardım göstərmək üçün 24/7 hazırdır.
           </p>
           <button
-            class="py-2 px-4 border-3 border-purple-500 rounded-[10px] text-[20px] text-blue-500 font-semibold mt-10"
+            class="py-2 px-4 border-3 border-purple-500 rounded-[10px] text-[15px] md:text-[20px] text-blue-500 font-semibold mt-4 md:mt-10"
           >
             Sayt Sifaris Et
           </button>
@@ -572,11 +583,11 @@
       </div>
 
       <section
-        class="  px-4 py-12 flex justify-center items-center flex-col lg:flex-row "
+        class="  px-4  mt-24 mb-12 flex justify-center items-center flex-col lg:flex-row "
       >
-       <div class=" flex flex-col lg:flex-row">
-        <div class="flex justify-center items-center flex-col gap-6">
-          <div class="flex justify-center items-center flex-wrap gap-3">
+       <div class=" flex flex-col lg:flex-row gap-10">
+        <div class="hidden sm:flex justify-center items-center flex-col gap-6">
+          <div class="flex justify-around items-center flex-wrap gap-3 ">
               <!-- Card 1 -->
               <div class="bg-white shadow-lg rounded-lg p-6 h-[270px] text-center w-[70%] lg:w-[30%]">
                 <p class="text-gray-500">Tamamlandı</p>
@@ -623,61 +634,52 @@
             <div>
               <div class="flex items-center justify-center    space-x-2">
                 <!-- Web Design -->
-                <div class="relative flex flex-col items-center">
-                    <div class="w-6 h-6 flex justify-center items-center bg-purple-500 text-white rounded-full border-2 border-purple-700">
-                        ✓
-                    </div>
-                    <span class="mt-2 text-sm text-gray-700">Web Design</span>
-                </div>
-        
-                <!-- Line -->
-                <div class="w-12 h-0.5 bg-purple-500"></div>
-        
-                <!-- Back-end -->
-                <div class="relative flex flex-col items-center">
-                    <div id="backend-step" class="w-6 h-6 flex justify-center items-center bg-white text-purple-500 rounded-full border-2 border-purple-500 transition-all duration-300">
-                        ●
-                    </div>
-                    <span class="mt-2 text-sm text-gray-700">Back-end</span>
-                </div>
-        
-                <!-- Line -->
-                <div id="backend-line" class="w-12 h-0.5 bg-gray-300 transition-all duration-300"></div>
-        
-                <!-- Front-end -->
-                <div class="relative flex flex-col items-center">
-                    <div id="frontend-step" class="w-6 h-6 flex justify-center items-center bg-white text-gray-400 rounded-full border-2 border-gray-400 transition-all duration-300">
-                    </div>
-                    <span class="mt-2 text-sm text-gray-700">Front-end</span>
-                </div>
+                <div class="w-full max-w-3xl">
+                  <div class="flex items-center justify-between">
+                      <div class="relative w-full">
+                          <div class="absolute inset-0 flex items-center">
+                              <div class="w-full h-1 bg-purple-300"></div>
+                          </div>
+                          <div class="relative flex justify-between">
+                              <div class="w-10 h-10 bg-purple-500 text-white flex items-center justify-center rounded-full"><i class="fa-solid fa-check"></i></div>
+                              <div class="w-10 h-10 bg-white border-2 border-purple-500 text-purple-500 flex items-center justify-center rounded-full">●</div>
+                              <div class="w-10 h-10  bg-white text-gray-500 border-gray-400 border-2 flex items-center justify-center rounded-full">●</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="flex justify-between text-gray-600 gap-20 mt-2">
+                      <span class="text-purple-600">Web Design</span>
+                      <span class="text-purple-500">Back-end</span>
+                      <span>Front-end</span>
+                  </div>
+              </div>
             </div>
             </div>
             </div>
         </div>
-
-        <!-- Order Tracking -->
-        <div class="mt-12 flex flex-col items-center text-center">
-          <h2 class="text-2xl font-bold">Vebsayt sifarişinizi izləyin</h2>
+ 
+        <div class=" mt-10 md:mt-2 flex flex-col items-center text-center ">
+          <h2 class="text-2xl font-bold mb-6">Vebsayt sifarişinizi izləyin</h2>
           <input
             type="text"
             placeholder="Sifariş kodu"
-            class="border mt-4 px-4 py-2 rounded-md w-64 text-center"
+            class="border mb-6 px-4 py-2 rounded-md w-[100%] text-center"
           />
           <button
-            class="bg-purple-500 text-white px-6 py-3 w-100% rounded-md mt-4 shadow-lg"
+            class="bg-purple-500  shadow-lg shadow-purple-500/50  text-white px-6 py-3 w-[100%] rounded-md  mb-6 "
           >
             İzlə
           </button>
-          <p class="mt-2 text-gray-400">
+          <p class="  text-gray-400 mb-6">
             Sayt.az ilə sifarişlərinizə hər zaman nəzarət edin
           </p>
         </div>
        </div>
       </section>
 
-      <section class="flex justify-center items-center my-20 bg-fuchsia-100">
+      <section class="flex justify-center items-center my-20 bg-fuchsia-100 py-20">
         <div class="text-center container py-5">
-          <h2 class="py-5 text-[21px] text-[#300b60] font-semibold">
+          <h2 class="py-5 text-[25px] text-[#300b60] font-semibold">
             Domen adini axtarin
           </h2>
           <p class="py-3 text-[15px] -[#300b60]text">
@@ -692,24 +694,16 @@
 
           <div class="flex justify-center mt-10">
             <div
-              class="text-center border border-[#dadce0] flex justify-center items-center w-min rounded-[8px]  "
+              class="text-center border border-[#dadce0] flex justify-center items-center rounded-[8px]  "
             >
-             <div>
-              <input
-              class="py-2 px-2 outline-none text-[13px]"
-              placeholder="Istediyiniz domen adi daxil edin"
-              type="text"
-              id="giris"
-            />
-              <p id="msg"></p>
-             </div>
-              
-               
+            
+              <input type="text" id="domain" placeholder="Domen adını daxil edin"
+              class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-center">
+ 
                 <select
                 class="border-l py-2 px-1 outline-none"
-                name=""
-                id="domeins"
-                id="domainExtension"
+                name="domeins"
+                id="domeins" 
               ></select>
             
               <button
@@ -719,13 +713,14 @@
               </button>
             </div>
           </div>
-          <div class="flex justify-center space-x-2 mt-6 flex-wrap" >
-            <div class="domain-option px-4 py-2 border border-purple-600 text-purple-600 rounded-md cursor-pointer hover:bg-purple-600 hover:text-white transition" data-value=".az">.az</div>
-            <div class="domain-option px-4 py-2 border border-purple-600 text-purple-600 rounded-md cursor-pointer hover:bg-purple-600 hover:text-white transition" data-value=".com">.com</div>
-            <div class="domain-option px-4 py-2 border border-purple-600 text-purple-600 rounded-md cursor-pointer hover:bg-purple-600 hover:text-white transition" data-value=".net">.net</div>
-            <div class="domain-option px-4 py-2 border border-purple-600 text-purple-600 rounded-md cursor-pointer hover:bg-purple-600 hover:text-white transition" data-value=".info">.info</div>
-            <div class="domain-option px-4 py-2 border border-purple-600 text-purple-600 rounded-md cursor-pointer hover:bg-purple-600 hover:text-white transition" data-value=".biz">.biz</div>
-            <div class="domain-option px-4 py-2 border border-purple-600 text-purple-600 rounded-md cursor-pointer hover:bg-purple-600 hover:text-white transition" data-value=".org">.org</div>
+          <p id="domainError" class="text-red-500 text-sm mt-2"></p>
+          <div class="mt-4 flex flex-wrap justify-center gap-2">
+            <button class="ext-btn border border-purple-500 text-purple-500 px-4 py-1 rounded hover:bg-purple-500 hover:text-white transition" data-value=".az">.az</button>
+            <button class="ext-btn border border-purple-500 text-purple-500 px-4 py-1 rounded hover:bg-purple-500 hover:text-white transition" data-value=".com">.com</button>
+            <button class="ext-btn border border-purple-500 text-purple-500 px-4 py-1 rounded hover:bg-purple-500 hover:text-white transition" data-value=".net">.net</button>
+            <button class="ext-btn border border-purple-500 text-purple-500 px-4 py-1 rounded hover:bg-purple-500 hover:text-white transition" data-value=".info">.info</button>
+            <button class="ext-btn border border-purple-500 text-purple-500 px-4 py-1 rounded hover:bg-purple-500 hover:text-white transition" data-value=".biz">.biz</button>
+            <button class="ext-btn border border-purple-500 text-purple-500 px-4 py-1 rounded hover:bg-purple-500 hover:text-white transition" data-value=".org">.org</button>
         </div>
         </div>
       </section>
@@ -739,7 +734,7 @@
               <h2 class="text-[18px] font-bold lg:text-1xl">Yaxşı Bir Başlanğıc Təhlükəsiz və Güclü Hostinq Tələb Edir</h2>
              <div class="flex justify-center">
               <div class="toggle-container">
-                <button id="ayliqBtn" class="toggle-button active" onclick="togglePlan(true)">Aylıq</button>
+                <button id="ayliqBtn" class="toggle-button active " onclick="togglePlan(true)">Aylıq</button>
                 <button id="illikBtn" class="toggle-button" onclick="togglePlan(false)">İllik</button>
             </div>
              </div>
@@ -756,16 +751,28 @@
                   <p class="mt-3 leading-relaxed dark:text-gray-600 text-[#300b60]">Etiam ac convallis enim, eget euismod dolor.</p>
                   <ul class="flex-1 mb-6 dark:text-gray-600">
                     <li class="flex mb-2 space-x-2">
-                       <span class='text-green-500''>✔</span>
-                      <span>Aenean quis</span>
+                       <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                       <span><b>3 GB</b> Disk Həcmi </span>
                     </li>
                     <li class="flex mb-2 space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Morbi semper</span>
+                      <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> <b>1</b> domen </span>
                     </li>
                     <li class="flex mb-2 space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Tristique enim nec</span>
+                      <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> <b>3</b> E-mail hesabi</span>
+                    </li>
+                    <li class="flex mb-2 space-x-2">
+                      <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> Premium müştəri dəstəyi</span>
+                    </li>
+                    <li class="flex mb-2 space-x-2">
+                      <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> SSL Təhlükəsizliyi</span>
+                    </li>
+                    <li class="flex mb-2 space-x-2">
+                      <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> Təhlükəsizlik Xüsusiyyətləri</span>
                     </li>
                   </ul>
                   <button type="button" class="inline-block px-3 py-2 font-semibold transition   text-center border border-violet-600 text-violet-600 rounded-3xl  hover:bg-violet-600 hover:text-white  ">Sifaris et</button>
@@ -773,29 +780,40 @@
               </div>
 
 
-              <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
-                <div class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-violet-600 dark:text-gray-50 rounded-2xl hover:border-violet-600 hover:border">
+              <div class="flex w-full mb-8  sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+                <div class="flex flex-grow flex-col p-6 space-y-6 rounded shadow-md sm:p-8 dark:bg-violet-600 dark:text-gray-50 rounded-2xl border-violet-600 border-2">
                   <div class="space-y-2">
                     <h2 id="plan2Price"  class="text-[20px] font-semibold">$10 / ay</h2>
                     <h4 class="text-2xl font-bold">Standart</h4>
                   </div>
                   <p class="leading-relaxed">Morbi cursus ut sapien sit amet consectetur.</p>
-                  <ul class="flex-1 space-y-2">
-                    <li class="flex items-center space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Everything in Free</span>
+                  <ul class="flex-1 mb-6 dark:text-gray-600">
+                    <li class="flex mb-2 space-x-2">
+                     <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                       <span><b>8 GB</b> Disk Həcmi </span>
                     </li>
-                    <li class="flex items-center space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Phasellus tellus</span>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> <b>2</b> domen </span>
                     </li>
-                    <li class="flex items-center space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Praesent faucibus</span>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> <b>5</b> E-mail hesabi</span>
                     </li>
-                    <li class="flex items-center space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Aenean et lectus blandit</span>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> Premium müştəri dəstəyi</span>
+                    </li>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> SSL Təhlükəsizliyi</span>
+                    </li>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> Təhlükəsizlik Xüsusiyyətləri</span>
+                    </li>   <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span>  Fayl İdarəedici</span>
                     </li>
                   </ul>
                   <button type="button" class="inline-block px-3 py-2 font-semibold transition   text-center border border-violet-600 text-violet-600 rounded-3xl  hover:bg-violet-600 hover:text-white  ">Sifaris et</button>
@@ -809,27 +827,35 @@
                     <h4 class="text-2xl font-bold">Professional</h4>
                   </div>
                   <p class="leading-relaxed dark:text-gray-600">Phasellus ultrices um nibh in vehicula.</p>
-                  <ul class="space-y-2 dark:text-gray-600">
-                    <li class="flex items-start space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Everything in Pro</span>
+                  <ul class="flex-1 mb-6 dark:text-gray-600">
+                    <li class="flex mb-2 space-x-2">
+                     <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                       <span><b>14 GB</b> Disk Həcmi </span>
                     </li>
-                    <li class="flex items-start space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Fusce sem ligula</span>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> <b>5</b> domen </span>
                     </li>
-                    <li class="flex items-start space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Curabitur dictum</span>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> <b>Limitsiz</b> E-mail hesabi</span>
                     </li>
-                    <li class="flex items-start space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Duis odio eros</span>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> Premium müştəri dəstəyi</span>
                     </li>
-                    <li class="flex items-start space-x-2">
-                      <span class='text-green-500''>✔</span>
-                      <span>Vivamus ut lectus ex</span>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> SSL Təhlükəsizliyi</span>
                     </li>
+                    <li class="flex mb-2 space-x-2">
+                    <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                      <span> Təhlükəsizlik Xüsusiyyətləri</span>
+                    </li>
+                  </li>   <li class="flex mb-2 space-x-2">
+                  <span class='text-green-500''><i class="fa-solid fa-check"></i></span>
+                    <span>  Fayl İdarəedici</span>
+                  </li>
                   </ul>
                   <button type="button" class="inline-block px-3 py-2 font-semibold transition   text-center border border-violet-600 text-violet-600 rounded-3xl  hover:bg-violet-600 hover:text-white  ">Sifaris et</button>
                 </div>
@@ -839,18 +865,18 @@
         </section>
 
         <section class="flex  justify-center text-[#300b60]">
-          <div class="p-10 w-[90%]">
-            <div class="flex justify-between w-full items-center flex-col text-center lg:text-left lg:flex-row  lg:p-10">
-                <div class="w-[60%]">
+          <div class=" p-3 sm:p-5 w-full lg:w-[80%]">
+            <div class="flex justify-between w-full items-center flex-col  text-left  lg:flex-row   ">
+                <div class=" w-full lg:w-[60%] px-2">
                   <h2 class="text-[35px] font-bold">Startuplar</h2>
                   <p class="text-[16px]">Mütəxəssis məsləhətlərimizlə biznesinizi necə inkişaf etdirəcəyinizi öyrənin.</p>
                 </div>
-                <div class="w-[35%] mt-5 lg:mt-0">
-                  <a class="py-2 px-4 bg-violet-600 text-white rounded-[15px]" href="">Butun_startuplar_>></a>
+                <div class="w-full lg:text-right lg:w-[30%] mt-5 lg:mt-0 px-2">
+                  <a class="py-2 px-4 bg-[#300b60] text-white rounded-[10px]" href="">Butun startuplar >></a>
                 </div>
             </div>
 
-            <div id="cards1" class="flex flex-col md:flex-row py-5 lg:p-10  gap-3 ">
+            <div id="cards1" class="flex flex-col justify-center md:flex-row py-5  gap-3 ">
              
             </div>
           </div>
@@ -887,7 +913,7 @@
               <p>Komandamızla Tanış Olaq</p>
            </div>
            <div class="flex justify-center px-5 md:px-14 lg:px-30">
-            <div id="teams" class="flex flex-wrap justify-center items-center gap-5  sm:w-[90%] lg:w-[70%] mt-5 ">
+            <div id="teams" class="flex flex-wrap justify-center items-center gap-3  sm:w-[90%] lg:w-[80%] mt-5 ">
             
             </div>
            </div>
@@ -899,37 +925,25 @@
                   <p >Paylasmaqdan Qurur Duyuruq</p>
                 </div>
                 <div>
-                    <div id="container" class="flex flex-col px-10 md:px-15 flex-wrap lg:px-20 lg:flex-row justify-center gap-5 items-center">
+                    <div id="container" class="flex flex-col md:px-10 md:px-15 flex-wrap lg:px-20 lg:flex-row justify-center gap-5 items-center">
                      
                     </div>
 
                   <div class="flex justify-center space-x-1 dark:text-gray-800 " id="pagnication">
-                    <button title="previous" type="button" class="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md dark:bg-gray-50 dark:border-gray-100">
-                      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-4">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                      </svg>
-                    </button>
-                    <button type="button" title="Page 1" class="inline-flex items-center justify-center w-8 h-8 text-sm font-semibold border rounded shadow-md dark:bg-gray-50 dark:text-violet-600 dark:border-violet-600">1</button>
-                    <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md dark:bg-gray-50 dark:border-gray-100" title="Page 2">2</button>
-                    <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md dark:bg-gray-50 dark:border-gray-100" title="Page 3">3</button>
-                    <button type="button" class="inline-flex items-center justify-center w-8 h-8 text-sm border rounded shadow-md dark:bg-gray-50 dark:border-gray-100" title="Page 4">4</button>
-                    <button title="next" type="button" class="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md dark:bg-gray-50 dark:border-gray-100">
-                      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="w-4">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                      </svg>
-                    </button>
+               
+                  
                   </div>
                 </div>
         </section>
 
 
 
-        <section class="py-16 text-center text-[#300b60]">
+        <section class="sm:mt-16 lg:mt-28 text-center text-[#300b60]">
           <h2 class="text-3xl font-bold  0">Müştərilərimizin Rəyləri</h2>
           <p class="  mb-6">Müştərilərin fikirləri</p>
         
-          <div class="max-w-4xl mx-auto p-10  px-20 mt-10 border border-gray-100">
-            <div class="swiper mySwiper bg-white    p-8 relative">
+          <div class="max-w-4xl mx-auto lg:p-10  lg:px-20 mt-10 border border-gray-100">
+            <div class="swiper mySwiper bg-white    lg:p-8 relative">
               <div class="swiper-wrapper">
                 <!-- Testimonial 1 -->
                 <div class="swiper-slide flex flex-col justify-center items-center text-center">
@@ -956,15 +970,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
-        
-              <!-- Navigasiya butonları -->
-              <div class="swiper-button-prev text-purple-600 hidden sm:block"></div>
-              <div class="swiper-button-next text-purple-600 hidden sm:block"></div>
-        
+              </div> 
               <!-- Pagination -->
               <div class="swiper-pagination mt-20"></div>
-            </div>
+            </div> 
           </div>
         </section>
 
@@ -980,19 +989,19 @@
                 <img class="w-full h-48 object-cover rounded-lg" src="/image/blog1.jpg" alt="Web Trends">
                 <h3 class="mt-4 font-semibold text-lg">Uğurlu biznes üçün hansı web trendləri izləməlisən?</h3>
                 <div class="flex flex-wrap gap-2 mt-2">
-                  <span class="bg-violet-600 text-white  px-2 py-1 rounded text-xs">Feb 27, 2025</span>
-                  <span class="bg-violet-600 text-white  px-2 py-1 rounded text-xs">webdesign</span>
-                  <span class="bg-violet-600 text-white  px-2 py-1 rounded text-xs">marketing</span>
+                  <span class=" bg-[#a271f2] text-white  px-2 py-1 rounded text-xs">Feb 27, 2025</span>
+                  <span class="bg-[#a271f2] text-white  px-2 py-1 rounded text-xs">webdesign</span>
+                  <span class="bg-[#a271f2] text-white  px-2 py-1 rounded text-xs">marketing</span>
                 </div>
               </div>
               
               <div class="border border-violet-500 rounded-lg p-4 shadow-md hover:shadow-lg">
-                <img class="w-full h-48 object-cover rounded-lg" src="/image/blog2.jpg" alt="DeepSeek AI">
+                <img class="w-full h-48 object-cover rounded-lg" src="	https://api.websiteca.com/storage/DUPcyTWGCtnRzHz9801ms8fDZWbMUsRIoErzIdyW.jpg" alt="DeepSeek AI">
                 <h3 class="mt-4 font-semibold text-lg">DeepSeek AI: Yeni Nəsil Süni İntellekt Aləti</h3>
                 <div class="flex flex-wrap gap-2 mt-2">
-                  <span class="bg-violet-600 text-white px-2 py-1 rounded text-xs">Feb 6, 2025</span>
-                  <span class="bg-violet-600 text-white  px-2 py-1 rounded text-xs">sayt yaratmaq</span>
-                  <span class="bg-violet-600 text-white  px-2 py-1 rounded text-xs">sayt sifarişi</span>
+                  <span class="bg-[#a271f2] text-white px-2 py-1 rounded text-xs">Feb 6, 2025</span>
+                  <span class="bg-[#a271f2] text-white  px-2 py-1 rounded text-xs">sayt yaratmaq</span>
+                  <span class="bg-[#a271f2] text-white  px-2 py-1 rounded text-xs">sayt sifarişi</span>
                 </div>
               </div>
               
@@ -1000,15 +1009,15 @@
                 <img class="w-full h-48 object-cover rounded-lg" src="/image/blog2.jpg" alt="Online Biznes Trendləri">
                 <h3 class="mt-4 font-semibold text-lg">2025-ci ildə Onlayn Biznesin Trendləri</h3>
                 <div class="flex flex-wrap gap-2 mt-2">
-                  <span class="bg-violet-600 text-white  px-2 py-1 rounded text-xs">Jan 29, 2025</span>
-                  <span class="bg-violet-600 text-white  px-2 py-1 rounded text-xs">marketing</span>
-                  <span class="bg-violet-600 text-white  px-2 py-1 rounded text-xs">social</span>
+                  <span class="bg-[#a271f2] text-white  px-2 py-1 rounded text-xs">Jan 29, 2025</span>
+                  <span class="bg-[#a271f2] text-white  px-2 py-1 rounded text-xs">marketing</span>
+                  <span class="bg-[#a271f2] text-white  px-2 py-1 rounded text-xs">social</span>
                 </div>
               </div>
             </div>
             
             <div class="text-center mt-8">
-              <button class="bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-600">Bütün Bloqlar</button>
+              <button class="bg-[#a271f2] text-white px-6 md:px-10 lg:px-16 py-2 rounded-lg hover:bg-purple-600">Bütün Bloqlar</button>
             </div>
           </section>
            
@@ -1081,7 +1090,7 @@
       </div>
       <div class="text-[#300b60] p-10">
         <hr class="text-gray-200">
-        <div class="flex justify-center items-center flex-col gap-30 md:flex-row pt-10">
+        <div class="flex justify-center items-center flex-col gap-5 lg:gap-30 md:flex-row pt-3 md:pt-10">
           <div>© Copyright 2004-2025 © Sayt.az .  Bütün Hüquqlar Qorunur.</div>
           <div><i class="fa-solid fa-phone"></i> 
             +(99470) 330-00-04
